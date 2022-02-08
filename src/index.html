@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Black Jack</title>
+    <script type="text/javascript" src="blackjack.js"></script>
+  </head>
+  <body>
+    <div class="table" id="table">
+      <div class="hand" id="dealer-hand">
+
+      </div>
+
+      <div class="player" id="player">
+        <div class="hand" id="player-hand">
+
+        </div>
+        <p class="bet" id="player-bet"></p>
+      </div>
+    </div>
+
+    <div class="user" id="player-actions">
+      <button type="button" name="button" id="hit">Hit!</button>
+      <button type="button" name="button" id="stand">Stand.</button>
+      <form>
+        <label for="one-hundred">$100</label>
+        <label for="five-hundred">$500</label>
+        <label for="one-thousand">$1k</label>
+        <label for="five-thousand">$5k</label>
+        <input type="number" id="one-hundred" name="one-hundred">
+        <input type="number" id="five-hundred" name="five-hundred">
+        <input type="number" id="one-thousand" name="one-thousand">
+        <input type="number" id="five-thousand" name="five-thousand">
+        <button type="submit" name="submit" id="submit-bet" onclick="bet()">Bet!</button>
+      </form>
+      <div class="info" id="player-info">
+        <p id="amount">Amount: </p>
+        <p id="won">Won: </p>
+        <p id="lost">Lost: </p>
+      </div>
+    </div>
+  </body>
+</html>
